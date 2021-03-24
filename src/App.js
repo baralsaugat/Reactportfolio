@@ -1,24 +1,59 @@
-import logo from './logo.svg';
 import './App.css';
+import {Container, Row, Col} from 'react-bootstrap';
+
+import {Navigator} from './components/home/Navigator';
+import {Herotext} from './components/home/Herotext'
+import { Skillset } from './components/skillset/Skillset';
+import {Aboutme} from './components/about-me/Aboutme'
+import { Myprojects } from './components/myprojects/Myprojects';
+import {Contact} from './components/contact/Contact'
+import {Footer} from './components/footer/Footer'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Row>
+        <Col> 
+
+       <Navigator/>
+
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+  
+        <Herotext/>
+        
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Skillset/>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+        <Aboutme/>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+        <Myprojects/>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+        <Contact/>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+        <Footer/>
+        </Col>
+      </Row>
+      </>
+  
   );
 }
 

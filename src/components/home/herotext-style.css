@@ -1,0 +1,18 @@
+.intro {
+  background-image: url(../../assets/background.jpg);
+  display: flex;
+}
+
+.introdesc {
+  color: white;
+  padding-top: 200px;
+  padding-left: 40px;
+}
+
+.introdesc h1 {
+  font-size: 40px;
+}
+
+.introdesc p {
+  font-size: large;
+}
